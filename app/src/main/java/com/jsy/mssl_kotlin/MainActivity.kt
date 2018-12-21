@@ -29,10 +29,12 @@ import org.jetbrains.anko.toast
 import org.json.JSONArray
 import java.io.IOException
 
+
 class MainActivity : AppCompatActivity() {
     var listData =  ArrayList<HashMap<String, Any>>()
     var totalData =  ArrayList<HashMap<String, Any>>()
     var pageNum:Int=0
+
 
     var permissions_list= arrayOf(
             Manifest.permission.WRITE_EXTERNAL_STORAGE,
