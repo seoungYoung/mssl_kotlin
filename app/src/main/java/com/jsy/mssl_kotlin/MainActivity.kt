@@ -40,6 +40,8 @@ class MainActivity : AppCompatActivity() {
             Manifest.permission.WRITE_EXTERNAL_STORAGE,
             Manifest.permission.READ_EXTERNAL_STORAGE
     )
+
+// commit test
     companion object {
         var totalPage:Int=-1
         const val numbersPerPage:Int=20
