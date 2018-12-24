@@ -33,10 +33,6 @@ dependencies {
     implementation "org.jetbrains.anko:anko-commons:0.10.2"
     implementation "org.jetbrains.anko:anko-appcompat-v7-commons:0.10.2"
     implementation "org.jetbrains.anko:anko-support-v4-commons:0.10.2"
-    implementation "org.jetbrains.anko:anko-sdk15:0.10.2"
-//    implementation "org.jetbrains.anko:anko-sdk21:0.10.2"
-//    implementation "org.jetbrains.anko:anko-sdk23:0.10.2"
-//    implementation "org.jetbrains.anko:anko-sdk25:0.10.2"
     implementation "org.jetbrains.anko:anko-appcompat-v7:0.10.2"
     implementation 'com.squareup.okhttp3:okhttp:3.10.0'
 }

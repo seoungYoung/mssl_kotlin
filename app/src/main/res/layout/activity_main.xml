@@ -5,123 +5,104 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:background="@drawable/bg"
+    tools:context="org.jsy.mssl_kotlin.MainActivity">
 
     <RadioGroup
-        android:id="@+id/janreGroup" android:orientation="horizontal"
+        android:id="@+id/janreGroup"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="3dp">
 
         <RadioButton
             android:id="@+id/allRb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
+            android:paddingRight="5dp"
             android:text="전곡"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
 
         <RadioButton
             android:id="@+id/balladeRd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingRight="5dp"
             android:text="발라드"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
 
         <RadioButton
             android:id="@+id/danceRd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingRight="5dp"
             android:text="댄스"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
 
         <RadioButton
             android:id="@+id/popRd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingRight="5dp"
             android:text="팝"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
 
         <RadioButton
             android:id="@+id/trotRd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingRight="5dp"
             android:text="트롯"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
     </RadioGroup>
 
     <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_vertical"
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textView3"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:text="검색"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="..."
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/holo_green_light"
+            android:textStyle="bold"
+            tools:text="총 10곡" />
 
         <EditText
             android:id="@+id/searchTxt"
-            android:layout_width="200dp"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
             android:hint="검색어를 입력하세요."
-            android:inputType="textPersonName" />
+            android:inputType="text"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
 
         <Button
             android:id="@+id/searchBtn"
             android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="검색하기" />
+            android:layout_height="40dp"
+            android:text="검색하기"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/allBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="전곡" />
-
-        <Button
-            android:id="@+id/balladeBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="발라드" />
-
-        <Button
-            android:id="@+id/danceBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="댄스" />
-
-        <Button
-            android:id="@+id/popBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="팝" />
-
-        <Button
-            android:id="@+id/trotBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="트로트" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:visibility="gone">
 
         <Button
             android:id="@+id/button5"
@@ -145,61 +126,126 @@
             android:text="db count?" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="테스트"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="테스트 영역"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/backupBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="초기로컬DB" />
+            android:text="서버백업" />
+
         <Button
             android:id="@+id/button2"
             android:layout_width="80dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="모두지우기" />
+
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="로컬sql 만들기" />
+
         <Button
             android:id="@+id/button1"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="로컬 Load" />
+
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/prevPageBtn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            app:srcCompat="@android:drawable/ic_media_previous"
+            tools:tint="@android:color/holo_red_dark" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="[ Page ]"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <ImageView
+            android:id="@+id/nextPageBtn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            app:srcCompat="@android:drawable/ic_media_next"
+            tools:tint="@android:color/holo_red_dark" />
+
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <Button
-            android:id="@+id/prevPageBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="☜이전페이지" />
+
         <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
-        <Button
-            android:id="@+id/nextPageBtn"
+            android:gravity="center_horizontal"
+            android:text="No"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/holo_purple"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="곡명"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/holo_purple"
+            android:textStyle="bold" />
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="☞다음페이지" />
+            android:gravity="center_horizontal"
+            android:text="곡 번호"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/holo_purple"
+            android:textStyle="bold" />
     </LinearLayout>
+
     <ListView
         android:id="@+id/main_list"
         android:layout_width="match_parent"

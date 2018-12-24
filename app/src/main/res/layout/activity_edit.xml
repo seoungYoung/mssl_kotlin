@@ -42,6 +42,7 @@
             android:id="@+id/tPhoneE"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="number"
             android:text="TextView"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
     </LinearLayout>
@@ -57,17 +58,58 @@
             android:text="노래 장르"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
+        <RadioGroup
+            android:id="@+id/songJenre"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/radioButton">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="발라드"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="댄스"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="팝송"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="트로트"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        </RadioGroup>
+
         <EditText
-            android:id="@+id/tPrimeNumE"
+            android:id="@+id/songKindTxt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:layout_weight="1"
+            android:text="발라드"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="100dp"
         android:orientation="horizontal">
 
         <TextView
@@ -79,7 +121,7 @@
         <EditText
             android:id="@+id/tPrivateNumE"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="100dp"
             android:text="TextView"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
     </LinearLayout>

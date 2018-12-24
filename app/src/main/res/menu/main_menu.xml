@@ -2,13 +2,32 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
+        android:id="@+id/menu_data_load"
+        android:title="샘플데이터 가져오기" />
+    <item
+        android:id="@+id/menu_makesql"
+        android:title="로컬데이터만들기" />
+    <item
         android:id="@+id/menu_write"
         android:icon="@android:drawable/ic_menu_edit"
         android:title="write"
         app:showAsAction="always" />
     <item
-        android:id="@+id/menu_reload"
-        android:icon="@android:drawable/ic_menu_rotate"
-        android:title="reload"
+        android:id="@+id/menu_delete"
+        android:title="모든 곡 삭제" />
+    <item
+        android:id="@+id/menu_upload"
+        android:icon="@android:drawable/ic_menu_upload"
+        android:title="서버 Upload" />
+    <item
+        android:id="@+id/menu_exit"
+        android:icon="@drawable/button_turn_on"
+        android:title="종료"
         app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_backup"
+        android:title="데이터 백업" />
+    <item
+        android:id="@+id/menu_restore"
+        android:title="데이터 Restore" />
 </menu>
